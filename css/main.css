@@ -10,107 +10,6 @@ textarea {
     color: #222;
 }
 
-body {
-    font-size: 1em;
-    line-height: 1.4;
-	background: url("../img/bg.png");
-}
-
-a {
-	cursor: pointer;
-	color: #d5883b;
-	text-decoration: none;
-}
-
-a:visited {
-	color: #d5883b;
-	text-decoration: none;
-}
-a:hover {
-	color: #faefa8;
-	text-decoration: underline;
-}
-
-span.cursor {
-	position: relative;
-}
-
-span.cursor em {
-	position: absolute;
-	font-family: arial;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 1.5em;
-	margin-left: 5px;
-	top: -30px;
-	color: #d5883b;
-}
-.page-wrapper {
-	margin: 100px 150px 50px 80px;
-	font-family: 'Abel', sans-serif;
-	color: #ccc;
-}
-
-.hidden {
-	display: none;
-}
-.page-wrapper h1 {
-	font-size: 2.5em;	
-}
-
-.page-wrapper p {
-	font-size: 2em;
-	margin: 0.5em 0;
-}
-
-.page-wrapper .imprint p {
-	font-size: 1em;
-	margin: 0.5em 0;
-}
-
-.page-wrapper .imprint h2 {
-	font-size: 1.5em;	
-}
-
-
-p.highlight, span.highlight {
-	font-weight: bold;
-	color: #d5883b;
-}
-
-footer {
-	border-top: solid 1px;
-	font-family: 'Abel';
-	font-weight: bold;
-	margin: 50px 0;
-	padding: 50px;
-	text-align: center;
-	color: #ccc;
-	text-decoration: none;
-}
-
-
-footer a:hover {
-	color: #ccc;
-	text-decoration: underline;
-}
-footer a:visited {
-	color: #ccc;
-}
-footer a {
-	color: #ccc;
-}
-
-footer span, footer a {
-	margin: 0 10px;
-}
-
-footer span iframe {
-	width: 90px;
-	height: 21px;
-	margin-bottom: -6px;
-}
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -156,32 +55,125 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   body {
+       font-size: 90%;
+       line-height: 1.4;
+	   background: url("../img/bg.png");
+   }
+
+   a {
+   	cursor: pointer;
+   	color: #d5883b;
+   	text-decoration: none;
+   }
+
+   a:visited {
+   	color: #d5883b;
+   	text-decoration: none;
+   }
+   a:hover {
+   	color: #faefa8;
+   	text-decoration: underline;
+   }
+
+   span.cursor {
+   	position: relative;
+   }
+
+   span.cursor em {
+   	position: absolute;
+   	font-family: arial;
+   	font-style: normal;
+   	font-weight: bold;
+   	font-size: 1.5em;
+   	margin-left: 0.1em;
+   	top: -0.5em;
+   	color: #d5883b;
+   }
+   .page-wrapper {
+   	margin: 6em 5em 5em 6em;
+   	font-family: 'Abel', sans-serif;
+   	color: #ccc;
+   }
+
+   .hidden {
+   	display: none;
+   }
+   .page-wrapper h1 {
+   	font-size: 2.5em;	
+   }
+
+   .page-wrapper p {
+   	font-size: 2em;
+   	margin: 0.5em 0;
+   }
+
+   .page-wrapper .imprint p {
+   	font-size: 1em;
+   	margin: 0.5em 0;
+   }
+
+   .page-wrapper .imprint h2 {
+   	font-size: 1.5em;	
+   }
 
 
+   p.highlight, span.highlight {
+   	font-weight: bold;
+   	color: #d5883b;
+   }
+
+   footer {
+   	border-top: solid 1px;
+   	font-family: 'Abel';
+   	font-weight: bold;
+   	margin: 2.5em 0;
+   	padding: 2em;
+   	text-align: center;
+   	color: #ccc;
+   	text-decoration: none;
+   }
 
 
+   footer a:hover {
+   	color: #ccc;
+   	text-decoration: underline;
+   }
+   footer a:visited {
+   	color: #ccc;
+   }
+   footer a {
+   	color: #ccc;
+   }
 
+   footer span, footer a {
+   	margin: 0 0.1em;
+   }
 
-
-
-
-
-
-
-
+   footer iframe {
+		margin-bottom: -0.4em;
+   }
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
 
 }
+
+@media only screen and (max-width: 400px) {
+	body {font-size:50%;}
+	.page-wrapper {margin: 3em}
+	footer {font-size: 200%; !important}
+	footer span, footer a {display: block; margin: 0.5em auto 0 auto; width: 20em}
+	footer span.fb-like { margin-bottom: 2em;}
+	footer em {display: none}
+ }
 
 /* ==========================================================================
    Helper classes
