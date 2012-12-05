@@ -101,9 +101,14 @@ footer a {
 	color: #ccc;
 }
 
-
 footer span, footer a {
 	margin: 0 10px;
+}
+
+footer span iframe {
+	width: 90px;
+	height: 21px;
+	margin-bottom: -6px;
 }
 
 ::-moz-selection {
