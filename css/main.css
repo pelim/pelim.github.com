@@ -168,9 +168,9 @@ textarea {
 
 @media only screen and (max-width: 400px) {
 	body {font-size:50%;}
-	.page-wrapper {margin: 3em}
-	footer {font-size: 200%; !important}
-	footer span, footer a {display: block; margin: 0.5em auto 0 auto; width: 20em}
+	.page-wrapper {margin: 3em !important;}
+	footer {font-size: 200% !important;}
+	footer span, footer a {display: block; margin: 0.5em auto 0 auto; width: 100%}
 	footer span.fb-like { margin-bottom: 2em;}
 	footer em {display: none}
  }
